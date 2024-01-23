@@ -4,10 +4,10 @@ import mysql.connector
 class Connection:
     def __init__(self):
         self.con = mysql.connector.connect(
-            host="",
-            user="",
-            password="",
-            database="",
+            host="localhost",
+            user="nepo",
+            password="1243",
+            database="program",
         )
         if self.con:
             print("Connection established")

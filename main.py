@@ -149,18 +149,10 @@ logout = tk.Button(
     text="Log Out",
     padx=15,
     pady=5,
-    command=lambda: log_out(username, logout, userbar),
-)
-refresh = tk.Button(
-    master=userbar,
-    text="refresh",
-    padx=15,
-    pady=5,
     command=restart,
 )
 logout.pack(side=tk.RIGHT, padx=15)
-username.pack(side=tk.RIGHT, padx=15)
-refresh.pack(side=tk.LEFT, padx=15, pady=10)
+username.pack(side=tk.LEFT, padx=15, pady=10)
 userbar.pack(side=tk.TOP, fill=tk.X)
 
 frame_borrowed_tools = tk.Frame(master=main_frame_right, bg="#252525")
