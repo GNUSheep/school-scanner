@@ -113,7 +113,7 @@ def main(my_root):
 
 window = tk.Tk()
 window.geometry("1000x670")
-window.minsize(420, 640)
+window.minsize(420, 740)
 window.title("SIEMA")
 
 
@@ -122,7 +122,7 @@ main_frame_right = tk.Frame(bg="#252525")
 keyboard = tk.Frame(master=main_frame_left, bg="#ffdd03")
 
 frame_enter = tk.Frame(
-    relief=tk.RIDGE, borderwidth=10, master=main_frame_left, background="#202020"
+    relief=tk.RIDGE, borderwidth=10, master=main_frame_left, background="#202020",
 )
 
 skanuj = tk.Label(
@@ -162,6 +162,7 @@ get_tools()
 entry = tk.Entry(
     master=frame_enter,
     fg="black",
+    font="Monaco 15"
 )
 entry.insert(0, "Podaj kod artykułu...")
 entry.pack(fill=tk.X)

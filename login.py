@@ -34,7 +34,7 @@ def temp_text(e):
 
 
 log = tk.Tk()
-log.geometry("250x80")
+log.geometry("300x90")
 log.resizable(False, False)
 log.title("LOGIN")
 
@@ -42,7 +42,7 @@ tlo = tk.Frame(
     bg="#ffdd03",
     master=log,
 )
-kod = tk.Entry(master=tlo)
+kod = tk.Entry(master=tlo,font="Monaco 14")
 kod.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=15)
 kod.insert(0, "Skanuj kartę użytkownika...")
 
